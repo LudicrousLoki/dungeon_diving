@@ -1,11 +1,17 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://creature.cs" type="Script" id=1]
-[ext_resource path="res://santiCreature.cs" type="Script" id=2]
+[ext_resource path="res://santiCreautreLibrary.cs" type="Script" id=2]
 [ext_resource path="res://Aedyn Character.cs" type="Script" id=3]
 
 [node name="Main" type="Node2D"]
 position = Vector2( 0, 1.49829 )
+
+[node name="santiMain" type="Node2D" parent="."]
+
+[node name="santiCreautreLibrary" type="Node2D" parent="santiMain"]
+position = Vector2( 0, -1.49829 )
+script = ExtResource( 2 )
 
 [node name="creature" type="Node2D" parent="."]
 position = Vector2( -77.912, -62.9289 )
@@ -14,7 +20,3 @@ script = ExtResource( 1 )
 [node name="Aedyn Character" type="Node2D" parent="."]
 position = Vector2( 79.4102, -65.9254 )
 script = ExtResource( 3 )
-
-[node name="santiCreature" type="Node2D" parent="."]
-position = Vector2( -77.912, 71.9187 )
-script = ExtResource( 2 )

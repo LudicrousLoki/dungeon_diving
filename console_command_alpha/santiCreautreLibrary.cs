@@ -1,22 +1,19 @@
-sing Godot;
+using Godot;
 using System;
 
-public class Aedyn_Character : Node2D
+public class santiCreautreLibrary : Node2D
 {
 	// Declare member variables here. Examples:
 	// private int a = 2;
 	// private string b = "text";
-	//private int maxHp = 30;
-	//private int currentHp = maxHp;
+	
+	
+	
 
 	// Called when the node enters the scene tree for the first time.
-	public override void _Ready() {
-		//System.out.println("Max HP: " + maxHp);
-		//System.out.println("Current HP: " + currentHp);
+	public override void _Ready()
+	{
 		
-		//currentHP -= 10;
-		
-		//System.out.println("Current HP: " + currentHp);
 	}
 
 //  // Called every frame. 'delta' is the elapsed time since the previous frame.
